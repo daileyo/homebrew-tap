@@ -5,13 +5,13 @@
 class Omgitworks < Formula
   desc "A lightweight CLI tool for discovering, organizing, and navigating git repositories"
   homepage "https://github.com/daileyo/omgitworks"
-  version "3.0.1"
+  version "3.0.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.1/omgitworks_3.0.1_darwin_amd64.tar.gz"
-      sha256 "f4580d83bf96aba9cefb86574c5408a325e7bb1e96374783d847b099ffb38c92"
+      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.2/omgitworks_3.0.2_darwin_amd64.tar.gz"
+      sha256 "91b9c2aa5b53fbe7f6b6607df481f08e7000f1021fd24f6cee3b9c9dda998164"
 
       define_method(:install) do
         bin.install "omgitworks"
@@ -19,8 +19,8 @@ class Omgitworks < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.1/omgitworks_3.0.1_darwin_arm64.tar.gz"
-      sha256 "0c40b1ec51164aebfcdb50e020c5a29b0a134db0e06beb504ba3e9d792342226"
+      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.2/omgitworks_3.0.2_darwin_arm64.tar.gz"
+      sha256 "25a01482339faa7c1a374545dd40d1bf81ed5fcd84a367f472e29fb252876810"
 
       define_method(:install) do
         bin.install "omgitworks"
@@ -31,16 +31,16 @@ class Omgitworks < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.1/omgitworks_3.0.1_linux_amd64.tar.gz"
-      sha256 "b677449a5d865a388e15b3732961ad0d9f9283450058feb4e59749c9ed6bfac8"
+      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.2/omgitworks_3.0.2_linux_amd64.tar.gz"
+      sha256 "75fb5314a252a984a93b64bf92f389700543f11f1c8c43151849ee236342496d"
       define_method(:install) do
         bin.install "omgitworks"
         generate_completions_from_executable(bin/"omgitworks", "completion")
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.1/omgitworks_3.0.1_linux_arm64.tar.gz"
-      sha256 "d9810a745282751d2f8d188ccb54f1b36d6eb46d78d4afdf81187cd75b2a4e4c"
+      url "https://github.com/daileyo/omgitworks/releases/download/v3.0.2/omgitworks_3.0.2_linux_arm64.tar.gz"
+      sha256 "89811dcd1e6761d762d1eba879f44c027042178102a62a28b1d2629d9344e3f2"
       define_method(:install) do
         bin.install "omgitworks"
         generate_completions_from_executable(bin/"omgitworks", "completion")
