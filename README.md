@@ -1,4 +1,4 @@
-# homebrew-omgitworks
+# homebrew-tap
 
 Homebrew tap for [omgitworks](https://github.com/daileyo/omgitworks) — a lightweight,
 cross-platform CLI for discovering, organizing, and navigating git repositories.
@@ -6,13 +6,13 @@ cross-platform CLI for discovering, organizing, and navigating git repositories.
 ## Install
 
 ```sh
-brew install daileyo/omgitworks/omgitworks
+brew install daileyo/tap/omgitworks
 ```
 
 Or tap first:
 
 ```sh
-brew tap daileyo/omgitworks
+brew tap daileyo/tap
 brew install omgitworks
 ```
 
@@ -23,7 +23,7 @@ The project was formerly `git-workspace`, distributed from `daileyo/homebrew-gws
 ```sh
 brew uninstall git-workspace
 brew untap daileyo/gws
-brew install daileyo/omgitworks/omgitworks
+brew install daileyo/tap/omgitworks
 ```
 
 The `omgw` command replaces `gws`. Shell integration still defines `gws` as a wrapper, so
