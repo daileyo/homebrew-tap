@@ -13,8 +13,13 @@ Or tap first:
 
 ```sh
 brew tap daileyo/tap
+brew trust daileyo/tap
 brew install omgitworks
 ```
+
+Homebrew 7.0 refuses to load formulae from an untrusted third-party tap, so the `brew trust`
+step is required when installing by bare formula name. The one-line form above does not need
+it — naming the tap explicitly trusts that formula for you.
 
 ## Upgrading from the old tap
 
